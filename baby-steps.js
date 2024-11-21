@@ -1,5 +1,5 @@
-// initialized a variable to store the total sum, starting at 0.
-var result = 0;
+var result = 0;// Import the 'fs' (filesystem) module to interact with the file system
+
 
 // started a loop from the third command-line argument (index 2)
 // because the first two elements in `process.argv` are the Node.js path

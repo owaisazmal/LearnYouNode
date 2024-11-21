@@ -1,8 +1,15 @@
-// Started from index 2 to skip 'node' and the script path
-const args = process.argv.slice(2);
+// initialized a variable to store the total sum, starting at 0.
+var result = 0;
 
-// In this case I am converting each argument to a number and calculating the sum
-const sum = args.reduce((total, num) => total + Number(num), 0);
+// started a loop from the third command-line argument (index 2)
+// because the first two elements in `process.argv` are the Node.js path
+// and the script file path.
+for (var i = 2; i < process.argv.length; i++) {
+  // converted the current argument from a string to a number
+  // and add it to the `result`.
+  //https://nodejs.org/docs/latest/api/process.html#processargv
+  result += Number(process.argv[i]);
+}
 
-// Printing the result to the console
-console.log(sum);
+// Finally,printed the total sum to the console.
+console.log(result);

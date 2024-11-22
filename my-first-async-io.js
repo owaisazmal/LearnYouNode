@@ -1,6 +1,7 @@
-const fs = require('fs');
+const fs = require('fs'); //explained in my-first-io.js
 
 // To retrieve the file path from the third command-line argument (process.argv[2])
+//https://nodejs.org/docs/latest/api/process.html#processargv
 const filePath = process.argv[2];
 
 //https://nodejs.org/docs/latest/api/fs.html#fsreadfilepath-options-callback

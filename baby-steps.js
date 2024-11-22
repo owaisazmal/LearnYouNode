@@ -1,4 +1,4 @@
-var result = 0;// Import the 'fs' (filesystem) module to interact with the file system
+var result = 0; //initializing var to 0 so we can increment it later on
 
 // `process.argv` is an array containing command-line arguments passed to the Node.js process.
 // https://nodejs.org/docs/latest/api/process.html#processargv
